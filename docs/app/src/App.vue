@@ -43,12 +43,11 @@ export default {
             enableHtml: false,
             fullStyle: [
                 `/*
-* 朋友们，七夕节快乐
-* 这么久了。还没有说说我的工作呢！
-* 我在做AI平台
-* 让AI训练变得简单
-* 开始介绍之前让我先整理一下网页排版
-* 你现在用的是。。。${isPc ? '电脑' : '手机'}
+* 天阶夜色凉如水，坐看牵牛织女星
+* 2020年8月25日，又到了一年一度的七夕节
+* "七夕节"又叫“乞巧节”，起源于古代人民对于自然的崇拜以及妇女穿针乞巧
+* 后来被赋予了牛郎织女的传说，使其成为了象征爱情的节日，到今天已经成了中国的“情人节”。
+* 今天让我们来写一篇七夕祝福语
 */
 
 /* 首先给所有元素加上过渡效果 */
@@ -108,15 +107,14 @@ html{
   ${ isPc ? '-webkit-transform: rotateY(-10deg) translateZ(-100px) ;transform: rotateY(-10deg) translateZ(-100px) ;' : '-webkit-transform: rotateX(10deg) translateZ(-100px) ;transform: rotateX(10deg) translateZ(-100px) ;' }
     ${ isPc ? '' : '-webkit-transform-origin: 50% 0% 0;transform-origin: 50% 0% 0;' }
   }
-/* 我开始写了 */
+/* 好了，我开始写祝福语了 */
 
 
 `,
                 `
-/* 是不是看着很简陋粗糙？
- * 因为这是 Markdown 格式的
- * 一种程序员用来写文档日志的简易语言
- * 翻译成 网页 就行了
+/* 这篇祝福语好像差点什么
+ * 对了，这是 Markdown 格式的，我需要变成对 刘畅 更友好的格式
+ * 简单，用开源工具翻译成 HTML 就行了
  */
 `,
                 `
@@ -157,33 +155,31 @@ html{
 `
             ],
             currentMarkdown: '',
-            fullMarkdown: `zhangchunsheng × ai
+        fullMarkdown: `bai
 ----
 
-2017年08日01日开始学习AI
-2020年疫情后新的开始
-已有 \`${getDateDiff((new Date()).getFullYear()+'-'+((new Date()).getMonth()+1)+'-'+(new Date()).getDate(),'2017-08-01') + 1}\` 天
-
-正在做的项目
+先吟诗一首，
+借牛郎织女的故事，展现人间的悲欢离合。
+《鹊桥仙》
 ----
 
-* AI集群管理
-* OCR扫描件识别
-* 数据集标注
-* 数据集管理
-* AI镜像管理平台-hub
-* AI容器管理平台-kube
-* AI训练
-* 导出模型管理
-* AI接口能力开放
-* 可视化AI建模
-* Notebook开放
-* ……
+* 纤云弄巧，飞星传恨，银汉迢迢暗度。
+* 金风玉露一相逢，便胜却人间无数。
+* 柔情似水，佳期如梦，忍顾鹊桥归路！
+* 两情若是久长时，又岂在朝朝暮暮。
 
-> 祝大家七夕快乐
-> 【Success is not final, failure is not fatal: it is the courage to continue that counts.】
-> AI将在各行各业发挥作用，让人们远离枯燥的工作！
+再吟诗一首
+《秋夕》
+----
 
+* 银烛秋光冷画屏，轻罗小扇扑流萤。
+* 天阶夜色凉如水，卧看牵牛织女星。
+
+祝福大家
+年年有今朝，岁岁有今日。
+少生孩子多种树@gaoran
+----
+>
 `
         }
     },
