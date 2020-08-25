@@ -29,7 +29,7 @@ let getDateDiff = function(startDate, endDate) {
     var dates = Math.abs((startTime - endTime)) / (1000 * 60 * 60 * 24);
     return dates;
 }
-document.title += getDateDiff((new Date()).getFullYear() + '-' + ((new Date()).getMonth() + 1) + '-' + (new Date()).getDate(), '2016-09-15') + 1 + '天';
+document.title += getDateDiff((new Date()).getFullYear() + '-' + ((new Date()).getMonth() + 1) + '-' + (new Date()).getDate(), '2013-04-21') + 1 + '天';
 export default {
     name: 'app',
     components: {
